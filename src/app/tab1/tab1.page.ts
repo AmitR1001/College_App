@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
 export class Tab1Page {
 
   constructor() {}
+  // sliderOpt = {
+  //   zoom: {
+  //     maxRatio: 4,
+  //   },
+  // };
 
 }

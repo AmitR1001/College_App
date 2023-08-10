@@ -5,7 +5,19 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  }
+  },
+  {
+    path: 'feedback',
+    loadChildren: () => import('./feedback/feedback.module').then( m => m.FeedbackPageModule)
+  },
+  {
+    path: 'web',
+    loadChildren: () => import('./web/web.module').then( m => m.WebPageModule)
+  },
+  // {
+  //   path: 'feeedback',
+  //   loadChildren: () => import('./feeedback/feeedback.module').then( m => m.FeeedbackPageModule)
+  // }
 ];
 @NgModule({
   imports: [

@@ -1,20 +1,40 @@
 <ion-tabs>
-
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="tab1">
-      <ion-icon name="triangle"></ion-icon>
-      <ion-label>Tab 1</ion-label>
+  <ion-tab-bar slot="bottom" >
+  <!-- <ion-tab-bar slot="bottom" > -->
+    <ion-tab-button tab="tab1" >
+      <ion-label>Faculty</ion-label>
+      <span>
+        <img src="../../assets/images/icons8-faculty-32.png" alt="form">
+      </span>
     </ion-tab-button>
 
-    <ion-tab-button tab="tab2">
-      <ion-icon name="ellipse"></ion-icon>
-      <ion-label>Tab 2</ion-label>
+    <ion-tab-button tab="tab2" >
+      <ion-label>Vision</ion-label>
+      <span>
+        <ion-icon size="large" name="rocket-outline"></ion-icon>
+      </span>
     </ion-tab-button>
 
-    <ion-tab-button tab="tab3">
-      <ion-icon name="square"></ion-icon>
-      <ion-label>Tab 3</ion-label>
+    <ion-tab-button tab="tab3" >
+      <ion-label>Events</ion-label>
+      <span>
+        <img src="../../assets/images/events.png" alt="events">
+      </span>
     </ion-tab-button>
+
+  <ion-tab-button tab="web" >
+    <ion-label>Visit Us</ion-label>
+    <span>      <ion-icon name="globe-outline" size="large"></ion-icon>
+      <!-- <img height="30px"  src="../../assets/images/feedback.png" alt="Feedback"> -->
+    </span>
+    </ion-tab-button>
+
+    <ion-tab-button tab="feedback" >
+      <ion-label>Feedback</ion-label>
+      <span>
+        <img height="30px"  src="../../assets/images/feedback.png" alt="Feedback">
+      </span>
+      </ion-tab-button>
   </ion-tab-bar>
 
 </ion-tabs>

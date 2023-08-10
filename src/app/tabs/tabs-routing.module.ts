@@ -20,6 +20,14 @@ const routes: Routes = [
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
+        path: 'feedback',
+        loadChildren: () => import('../feedback/feedback.module').then( m => m.FeedbackPageModule)
+      },
+      {
+        path: 'web',
+        loadChildren: () => import('../web/web-routing.module').then( m => m.WebPageRoutingModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'

@@ -22,5 +22,6 @@ describe('TabsPage', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+    
   });
 });

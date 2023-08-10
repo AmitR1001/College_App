@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Feedback</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button id="open-modal" expand="block">Open</ion-button>
+  <p>{{ message }}</p>
+  <ion-modal trigger="open-modal" (willDismiss)="onWillDismiss($event)">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-button (click)="cancel()">Cancel</ion-button>
+          </ion-buttons>
+          <ion-title>Welcome</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="confirm()" [strong]="true">Confirm</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ion-item>
+          <ion-label position="stacked">Enter your name</ion-label>
+          <ion-input type="text" placeholder="Your name" [(ngModel)]="name"></ion-input>
+        </ion-item>
+        <ion-grid>
+          <ion-row>
+            <em id="feedhead">You can rate this application here</em>
+            <ion-col>     
+              <ion-range [min]="0" [max]="10" [value]="10" [pin]="true" [ticks]="true" [snaps]="true"></ion-range>
+              
+            </ion-col>
+          </ion-row>
+      
+          <ion-row>
+            <ion-col>
+              Did you like this application <br>
+              <ion-radio-group value="goal" required>
+                <br>
+                <ion-item>
+                  <ion-label>Yes</ion-label>
+                  <ion-radio slot="start" value="yes"></ion-radio>
+                </ion-item>
+      
+                <ion-item>
+                  <ion-label>No</ion-label>
+                  <ion-radio slot="start" value="no"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              Would consider visting us again <br>
+              <ion-radio-group value="goal" required>
+                <br>
+                <ion-item>
+                  <ion-label>Yes</ion-label>
+                  <ion-radio slot="start" value="yes"></ion-radio>
+                </ion-item>
+      
+                <ion-item>
+                  <ion-label>No</ion-label>
+                  <ion-radio slot="start" color="tertiary"value="no"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-col>
+          </ion-row>
+      
+          <ion-row>
+            <ion-col>
+              Any suggestions:
+              <ion-item class="box">
+                <ion-input required></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <!-- <ion-button (click)="confirm()" [strong]="true">Submit</ion-button> -->
+              <!-- <ion-button type="submit" expand="block" (click)="presentAlert()">Submit</ion-button> -->
+              <ion-button type="submit" expand="block" (click)="confirm()">Submit</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-content>
+      
+    </ng-template>
+  </ion-modal>
+</ion-content>
+
+
+
+<ion-content>
+  <br>
+  
+</ion-content>
+

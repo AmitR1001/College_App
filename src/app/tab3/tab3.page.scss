@@ -1,0 +1,24 @@
+.list{
+    text-align: center;
+    padding:10px;
+    font: size 200%;;
+}
+ion-button:hover {
+    color: rgb(74, 255, 2);
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+    color: blue;
+
+}
+
+.zoom:hover {
+    transform: scale(2);
+}

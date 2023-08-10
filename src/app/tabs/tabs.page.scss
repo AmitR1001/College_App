@@ -1,1 +1,35 @@
+ion-icon {
+    color: rgb(2, 237, 245);
+    size-adjust: auto;
+}
 
+ion-label {
+    font-size: small;
+    font-weight: 100;
+}
+
+// .tab-button :nth-child(1) {
+//     padding-left: 10px;
+//     // min-width: 2px;
+//     }
+
+// .tab1-button{
+//     padding-left: 20px;
+// }
+
+// .tab-button{
+//     padding: 0px 0px 0px 0px;
+// }
+
+
+
+// .tab5-button{
+//     padding-right: 20px;
+// }
+
+ion-tab-bar {
+    width: 100%;
+    height: 70px;
+    overflow-x: scroll;
+    justify-content: left;
+}

@@ -1,17 +1,56 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Vision and Mission
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content >
+  
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
-</ion-content>
+    <ion-app>
+      <ion-content fullscreen class="ion-padding" scroll-y="false">
+        <ion-slides>
+          <ion-slide>
+            <div class="slide">
+              <img src="../../assets/images/vision.png" />
+              <h2>Vision</h2>
+              <p>
+                To create <b>a centre of excellence</b> which will produce cutting edge technologists to cater the needs of Business and Society.
+              </p>
+            </div>
+          </ion-slide>
+
+          <ion-slide>
+            <img src="../../assets/images/mission.png" />
+            <h2>MISSION</h2>
+              <ul class="demo">
+              <li>To provide high quality education.</li> 
+              <li>To train the students to excel in cutting edge technologies that make them industry ready.</li>              
+              <li>To inculcate ethical and professional values in students for the betterment of society.</li> 
+              <li>To inculcate entrepreneurial mindset in students in order to make them job creators.</li> 
+              </ul>
+          </ion-slide>
+
+          <ion-slide>
+            <img src="../../assets/images/slide-3.png" />
+            <h2>PEO of MCA Department</h2>
+            <ul class="demo">
+              <li>To recognize and adopt social and ethical issues in computing.</li>
+              <li>To become an effective presenter to work as a responsible team leader.</li>
+              <li>To apply knowledge in order to solve real world problems.</li>
+            </ul>
+          </ion-slide>
+
+          <ion-slide>
+            <img src="../../assets/images/slide-4.png" />
+            <h2>Programme Outcomes</h2>
+            <ion-button fill="clear" href="http://mca.spit.ac.in/Docs/PO_PSO.pdf">Continue to Download Pdf <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+          </ion-slide>
+        </ion-slides>
+      </ion-content>
+    </ion-app>
+  </ion-content>
+
+
